@@ -8,11 +8,11 @@ insertion_sort (int* seq, int n)
       int cur = seq[i];
       int j = i - 1;
       while (j >= 0 && seq[j] > cur)
-	seq[j + 1] = seq[j--];
+        seq[j + 1] = seq[j--];
       seq[j + 1] = cur;
     }
 }
-  
+
 
 int
 main ()

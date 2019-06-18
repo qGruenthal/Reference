@@ -6,13 +6,13 @@ bubble_sort (int* seq, int n)
   for (int i = 0; i < n - 1; ++i)
     for (int j = 0; j < n - 1; ++j)
       if (seq[j] > seq[j + 1])
-	{
-	  int tmp = seq[j];
-	  seq[j] = seq[j + 1];
-	  seq[j + 1] = tmp;
-	}
+        {
+          int tmp = seq[j];
+          seq[j] = seq[j + 1];
+          seq[j + 1] = tmp;
+        }
 }
-  
+
 
 int
 main ()
