@@ -7,10 +7,10 @@ then
   dir=$1
 
   tmp=$(mktemp)
-  cat $dir/todo | while read task
+  cat $dir/.todo | while read task
   do
     echo $task > $tmp
-    cat $dir/langs | while read lang
+    cat $dir/.langs | while read lang
     do
       if [ ! -e $dir/$task.$lang ]
       then
