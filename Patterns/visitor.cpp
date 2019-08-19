@@ -60,7 +60,7 @@ public:
   {
     this->result = l.value;
   }
-    
+
   void visit (Add& e)
   {
     e.left->accept (*this);
@@ -81,7 +81,7 @@ class Print
   {
     printf ("%d", l.value);
   }
-  
+
   void visit (Add& e)
   {
     e.left->accept (*this);
@@ -108,5 +108,5 @@ main ()
 
   e->accept (p);
   e->accept (c);
-  printf (" =\n %d\n", c.result);
+  printf (" = %d\n", c.result);
 }
